@@ -21,9 +21,9 @@ const TableHead = ({ headers, sorting, onSort }) => {
                         <span className="m-2">
                             {header.path === sorting.path ? (
                                 sorting.order === "asc" ? (
-                                    <i className="bi bi-sort-up" />
-                                ) : (
                                     <i class="bi bi-sort-down-alt" />
+                                ) : (
+                                    <i className="bi bi-sort-up" />
                                 )
                             ) : null}
                         </span>
