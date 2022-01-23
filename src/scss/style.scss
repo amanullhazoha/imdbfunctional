@@ -1,0 +1,83 @@
+body {
+    background: #d2d1cd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background: #000;
+    padding: 10px 0;
+
+    h3 {
+        padding: 5px 7px;
+        background: #f5c518;
+        border-radius: 10px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    h4{
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500; 
+    }
+}
+#movies {
+    background: #f8f8f8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .movieTable{
+        border-right: 3px solid #999999;
+    }
+
+    table {
+        margin-right: 15px;
+
+        th {
+            color: #666666;
+            font-size: 14px;
+        }
+
+        tbody {
+            border-collapse: collapse;
+            border: 1px solid #fff;
+
+            tr {
+                border-top: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+
+                &:nth-child(even) {
+                    background: #fbfbfb;
+                }
+
+                &:nth-child(odd) {
+                    background: #f6f6f5;
+                }
+
+                td {
+                    vertical-align: middle;
+
+                    &.title {
+                        color: #136CB2;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
